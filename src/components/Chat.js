@@ -4,11 +4,12 @@ import { IoInformationCircle } from "react-icons/io5";
 import { FiSmile } from "react-icons/fi";
 import { IoIosSend } from "react-icons/io";
 import { AiOutlineUser } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Chat = () => {
   return (
-    <div className="Chat flex flex-col text-white h-[100vh] w-[20vw] bg-[#191537] float-right">
-      <div className="header flex flex-row h-[60px] w-[300px] gap-5 text-center items-center justify-center shadow-lg pb-5 border-white border-2">
+    <div className="Chat flex flex-col text-white h-[100vh] w-[20vw] bg-[#191537] float-right items-center justify-center">
+      <div className="header flex flex-row h-[60px] w-[300px] gap-5 text-center items-center justify-center shadow-lg  border-white border-2">
         <div className="w-1/3 rounded-full w-[40px] h-[40px] bg-[#23224A] text-black flex justify-center items-center">
           <BiMessageSquareDetail className="text-white w-[19px] h-[19px]" />
         </div>
@@ -16,15 +17,14 @@ const Chat = () => {
           <input
             type="text"
             placeholder="General Chat"
-            className="w-2/3 rounded-full w-[190px] h-[38px] bg-[#23224A] text-black text-sm text-[#BEBEDC] px-4"
+            className="w-2/3 rounded-full w-[190px] h-[38px] bg-[#23224A] text-black text-sm text-[#BEBEDC] px-4 focus:outline-none"
           />
         </div>
         <div className="w-1/3 rounded-full w-[40px] h-[38px] bg-[#23224A] text-white flex justify-center items-center">
           <IoInformationCircle className="w-[19px] h-[19px]" />
         </div>
       </div>
-      {/* <div className='body flex flex-row gap-5 text-center items-center mt-[16px] justify-center shadow-lg pb-5'> */}
-      {/* message box */}
+
       <div className="main-message-body h-full w-full overflow-y-auto">
         <div className="chat flex mt-4">
           <div className="d1 ml-3 h-auto w-1/6">
@@ -176,7 +176,7 @@ const Chat = () => {
         <input
           type="text"
           placeholder="Type your messages"
-          className="bg-[#23224A] h-[30px] text-[12px]"
+          className="bg-[#23224A] h-[30px] text-[12px] focus:outline-none"
         />
 
         <div className="flex gap-3">
