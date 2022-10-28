@@ -18,6 +18,7 @@ import {
   useParams,
   Router,
 } from "react-router-dom";
+import Race from "./pages/Race";
 // import Home from './pages/home';
 
 function App() {
@@ -25,10 +26,12 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home/>} exact>
+          <Route path="/" element={<Component />} />
           <Route path="/duel" element={<Duel />} />
           <Route path="/loot" element={<Loot />} />
           <Route path="/Wheel" element={<Wheel />} />
           <Route path="/Poker" element={<Poker />} />
+          <Route path="/Race" element={<Race />} />
           <Route path="/Error" element={<Error />} />
         </Route>
       </Routes>

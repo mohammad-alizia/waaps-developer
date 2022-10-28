@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 
 const Chat = () => {
   return (
-    <div className="Chat flex flex-col text-white h-[100vh] w-[20vw] bg-[#191537] float-right items-center justify-center">
+    <div className="Chat flex flex-col text-white h-[100vh] w-[100%] bg-[#191537] float-right items-center justify-center">
       
 
-      <div className="header flex flex-row h-[60px] w-[300px] gap-5 text-center items-center justify-center shadow-lg  border-white border-[1px]">
+      <div className="header flex flex-row h-[60px] w-[100%] gap-5 text-center items-center justify-center shadow-lg  border-white border-[1px]">
         <div className="w-1/3 rounded-full w-[40px] h-[40px] bg-[#23224A] text-black flex justify-center items-center">
           <BiMessageSquareDetail className="text-white w-[19px] h-[19px]" />
         </div>

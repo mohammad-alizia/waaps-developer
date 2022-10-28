@@ -9,6 +9,14 @@ import { CgCardHearts } from "react-icons/cg";
 import { GiTwoCoins, GiCarWheel } from "react-icons/gi";
 import { TbSword } from "react-icons/tb";
 
+import home from '../assets/icons/home.png' 
+import duel from '../assets/icons/talwar.png' 
+import poker from '../assets/icons/poker_card.png' 
+import pokerchip from '../assets/icons/poker_chip_1.png' 
+import fortunewheel from '../assets/icons/fortune-wheel 1.png' 
+import flag from '../assets/icons/flag.png' 
+
+
 // import Home from '../../public/images/home'
 
 import Duel from "../pages/Duel";
@@ -19,12 +27,12 @@ const Sidebar = () => {
 
   return (
 
-    <div className="Sidebar absolute font-normal flex items-center flex-col  h-[auto] w-[86px] bg-[#23224A] rounded-[56px] text-white ml-[16px]">
+    <div className="Sidebar absolute font-normal flex items-center flex-col  h-[688px] w-[86px] bg-[#23224A] rounded-[56px] text-white">
       
         <Link to='/'>
-        <div className="flex flex-col items-center mt-10 text-sm cursor-pointer">
+        <div className="flex flex-col items-center mt-7 text-sm cursor-pointer">
           <div className="text-[20px]">
-            <MdHomeFilled />
+            <img src={home} alt='home-icon'/>
           </div>
           <div className="leading-[30px] text-[12px]">home</div>
         </div>
@@ -32,9 +40,9 @@ const Sidebar = () => {
         
 
         <Link to="/duel">
-        <div className="flex flex-col items-center mt-10 text-sm cursor-pointer text-[#6E6D90]">
+        <div className="flex flex-col items-center mt-5 text-sm cursor-pointer text-[#6E6D90]">
           <div className="text-[20px]">
-            <TbSword />
+          <img src={duel} alt='duel-icon'/>
           </div>
           <div className="leading-[30px] text-[12px] ">Dual</div>
         </div>
@@ -43,9 +51,9 @@ const Sidebar = () => {
 
    
         <Link to="/poker">
-        <div className=" flex flex-col items-center mt-10 text-sm  cursor-pointer text-[#6E6D90]">
+        <div className=" flex flex-col items-center mt-5 text-sm  cursor-pointer text-[#6E6D90]">
           <div className="text-[20px] ">
-            <CgCardHearts />
+          <img src={poker} alt='poker-icon'/>
           </div>
           <div className="leading-[30px] text-[12px]">Poker</div>
         </div>
@@ -53,18 +61,18 @@ const Sidebar = () => {
    
 
         <Link to="/loot">
-        <div className="flex flex-col items-center mt-10 text-sm cursor-pointer text-[#6E6D90]">
+        <div className="flex flex-col items-center mt-5 text-sm cursor-pointer text-[#6E6D90]">
           <div className="text-[20px]">
-            <GiTwoCoins />
+          <img src={pokerchip} alt='poker-chip-icon'/>
           </div>
           <div className="leading-[30px] text-[12px]">Loot</div>
         </div>
         </Link>
    
         <Link to="/wheel">
-        <div className="flex flex-col items-center mt-10 text-sm cursor-pointer text-[#6E6D90]">
+        <div className="flex flex-col items-center mt-5 text-sm cursor-pointer text-[#6E6D90]">
           <div className="text-[20px]">
-            <GiCarWheel />
+          <img src={fortunewheel} alt='fortune-wheel-icon'/>
           </div>
           <div className="leading-[30px] text-[12px]">Wheel</div>
         </div>
@@ -72,9 +80,9 @@ const Sidebar = () => {
 
 
         <Link to="/race">
-        <div className="flex flex-col items-center mt-10 text-sm  cursor-pointer text-[#6E6D90]">
+        <div className="flex flex-col items-center mt-5 text-sm  cursor-pointer text-[#6E6D90]">
           <div className="text-[20px]">
-            <BsFillFlagFill className="-rotate-45" />
+          <img src={flag} alt='race-icon'/>
           </div>
           <div className="leading-[30px] text-[12px]">Race</div>
         </div>
@@ -82,7 +90,7 @@ const Sidebar = () => {
 
 
         <div
-          className={`sec2 flex flex-col text-[#6E6D91] text-[16px] space-y-5 mt-12 mb-10`}
+          className={`sec2 flex flex-col text-[#6E6D91] text-[16px] space-y-5 mt-16 mb-10`}
           >
           {/* <div className={`sec2 text-[#6E6D91] text-[${'50px'}]`}> */}
           
