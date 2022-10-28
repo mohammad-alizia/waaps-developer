@@ -5,12 +5,14 @@ import Comp2 from "../components/Home_Components/comp 2";
 import Comp3 from "../components/Home_Components/comp 3";
 import Comp4 from "../components/Home_Components/comp4";
 import Comp5 from "../components/Home_Components/comp5";
+import Comp6 from "../components/Home_Components/comp6";
+import Comp7 from "../components/Home_Components/comp7";
 
 const Component = () => {
   return (
-    <div className="h-full w-full flex justify-center items-center">
+    <div className="h-full w-full flex justify-center">
       <div>
-        <div className="flex justify-center items-center p-[13px] relative m-auto">
+        <div className="flex justify-center items-center p-[13px] relative mt-[40px]">
           <div>
             <Comp1 />
             <Comp2 />
@@ -20,6 +22,15 @@ const Component = () => {
         <div className="flex justify-center items-center ml-[2.5rem] space-x-[13px]">
           <Comp4 />
           <Comp5 />
+        </div>
+       
+
+        <div className="flex justify-center items-center ml-[2.5rem] space-x-[13px]">
+          <Comp6 />
+        </div>
+
+        <div className="flex justify-center items-center ml-[2.5rem] space-x-[13px]">
+          <Comp7 />
         </div>
       </div>
     </div>
