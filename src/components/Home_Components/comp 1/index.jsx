@@ -8,6 +8,8 @@ import { FaCoins } from 'react-icons/fa';
 function Comp1() {
     return (
 
+        <div className="w-[90%]">
+
         <div className="comp1">
             <div className="header">
                 <div className="race">Daily Race</div>
@@ -25,6 +27,7 @@ function Comp1() {
                  </div>
                 <div className="bountyRank">1,021</div>
             </div>
+        </div>
         </div>
     
     

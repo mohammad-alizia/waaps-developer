@@ -1,0 +1,51 @@
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
+import Comp1 from "../components/Home_Components/comp 1";
+import Comp2 from "../components/Home_Components/comp 2";
+import Comp3 from "../components/Home_Components/comp 3";
+import Comp4 from "../components/Home_Components/comp4";
+import Comp5 from "../components/Home_Components/comp5";
+import Comp6 from "../components/Home_Components/comp6";
+import Footer from "../components/Home_Components/Footer";
+
+// md:space-y-0 md:space-x-3 md:justify-center md:items-center
+
+// md:flex md:justify-center md:items-center md:mt-3 md:ml-[35px]
+const Component = () => {
+  return (
+      <center>
+    <div className=" w-full">
+
+        <div className="2xl:flex xl:flex xl:flex-row lg:space-x-6 lg:space-y-6  md:flex md:flex-col md:justify-center md:items-center justify-center items-center mt-[40px] overflow-y-auto w-[100%] overflow-x-hidden">
+
+          <div className="2xl:block xl:block xl:space-x-10 xl:space-y-3 lg:flex lg:space-y-0 lg:ml-16 md:flex md:gap-3 w-[100%] overflow-x-hidden">
+            <Comp1 />
+            <Comp2 />
+          </div>
+          <div className="lg:-ml-11  md:flex md:justify-center md:items-center md:mt-3 md:ml-[35px] ">
+            <Comp3 />
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center space-x-[13px] ml-5 w-[90%] mt-3">
+          <Comp4 />
+          <Comp5 />
+        </div>
+
+        <div className="flex justify-center items-center ml-[2.5rem] space-x-[13px]">
+          <Comp6 />
+        </div>
+
+        <div className="flex justify-center items-center space-x-[13px] ">
+
+        </div>
+
+
+
+    </div>
+<Footer/>
+      </center>
+  );
+};
+
+export default Component;

@@ -6,35 +6,34 @@ import Comp3 from "../components/Home_Components/comp 3";
 import Comp4 from "../components/Home_Components/comp4";
 import Comp5 from "../components/Home_Components/comp5";
 import Comp6 from "../components/Home_Components/comp6";
-import Comp7 from "../components/Home_Components/comp7";
+import Footer from "../components/Home_Components/Footer";
+import '../css/component.css'
+// md:space-y-0 md:space-x-3 md:justify-center md:items-center
 
+// md:flex md:justify-center md:items-center md:mt-3 md:ml-[35px]
 const Component = () => {
   return (
-    <div className="h-full w-full flex justify-center">
-      <div>
-        <div className="flex justify-center items-center p-[13px] relative mt-[40px]">
-          <div>
-            <Comp1 />
-            <Comp2 />
-          </div>
+
+    <div className="overflow-hidden">
+
+      <div className={` flex justify-center items-center overflow-hidden`} >
+        <div className="lg-res space-y-3 ">
+          <Comp1 />
+          <Comp2 />
+        </div>
+        <div>
           <Comp3 />
         </div>
-        <div className="flex justify-center items-center ml-[2.5rem] space-x-[13px]">
-          <Comp4 />
-          <Comp5 />
-        </div>
-       
-
-        <div className="flex justify-center items-center ml-[2.5rem] space-x-[13px]">
-          <Comp6 />
-        </div>
-
-        <div className="flex justify-center items-center ml-[2.5rem] space-x-[13px]">
-          <Comp7 />
-        </div>
       </div>
+
+        {/*second  */}
+      <div className="flex justify-center items-center">
+      <Comp4/>
+      <Comp5/>
+      </div>
+
     </div>
-  );
+  )
 };
 
 export default Component;

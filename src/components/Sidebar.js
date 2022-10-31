@@ -27,17 +27,17 @@ const Sidebar = () => {
 
   return (
 
-    <div className="Sidebar absolute font-normal flex items-center flex-col  h-[688px] w-[86px] bg-[#23224A] rounded-[56px] text-white">
+    <div className="Sidebar font-normal flex items-center flex-col  h-[688px] w-[86px] bg-[#23224A] rounded-[56px] text-[#6E6D90] ">
       
-        <Link to='/'>
-        <div className="flex flex-col items-center mt-7 text-sm cursor-pointer">
-          <div className="text-[20px]">
-            <img src={home} alt='home-icon'/>
+        <Link to='/' className="hover:text-white">
+        <div className="flex flex-col items-center mt-7 text-sm cursor-pointer text-[#6E6D90] ">
+          <div className="text-[20px] text-[#6E6D90] ">
+            <MdHomeFilled/>
           </div>
-          <div className="leading-[30px] text-[12px]">home</div>
+          <div className="leading-[30px] text-[12px] text-[#6E6D90]">home</div>
         </div>
         </Link>
-        
+
 
         <Link to="/duel">
         <div className="flex flex-col items-center mt-5 text-sm cursor-pointer text-[#6E6D90]">
